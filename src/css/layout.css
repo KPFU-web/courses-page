@@ -1,0 +1,26 @@
+/* Layout stiles     */
+
+
+#content {
+    @apply mb-32;
+}
+main {
+    @apply w-3/4;
+}
+
+
+
+
+.course-header {
+    @apply flex justify-between items-center;
+}
+.course-header > h2 {
+    @apply text-4xl font-bold my-12;
+}
+
+.course-grid {
+    @apply flex flex-wrap;
+}
+.course-grid .course {
+    @apply w-1/2 p-12;
+}

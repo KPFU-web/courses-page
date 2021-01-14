@@ -1,0 +1,11 @@
+/* Sidebar */
+.sidebar {
+    @apply w-1/4 pr-40;
+}
+
+.sidebar > h4 {
+    @apply text-xl font-bold mt-32 mb-24;
+}
+.sidebar select {
+    @apply h-48 pl-12 pr-4 rounded-lg bg-blue w-full;
+}

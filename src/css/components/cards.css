@@ -1,0 +1,26 @@
+
+.card {
+    @apply bg-secondary rounded-2xl p-24 w-full h-full flex flex-col justify-between shadow;
+}
+.card .top {
+    @apply flex justify-between;
+}
+ 
+.card .tag {
+    @apply rounded-3xl text-sm py-4 px-12;
+}
+
+.card .tag.tag_primary {
+    @apply  text-white bg-primary;
+}
+.card .tag.tag_secondary {
+    @apply bg-gray-400;
+}
+.card .title {
+    @apply text-3xl font-bold my-32;
+}
+
+
+.card .bottom {
+    @apply flex justify-between items-center;
+}

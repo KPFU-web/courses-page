@@ -1,0 +1,7 @@
+.header {
+    @apply py-24 bg-primary;
+}
+
+.brand {
+    @apply flex-shrink-0;
+}

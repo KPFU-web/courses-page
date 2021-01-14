@@ -1,0 +1,17 @@
+
+#top .breadcrumbs {
+    @apply text-sm mb-20 mt-20;
+}
+
+
+#top .header-search {
+    @apply my-24 py-12 pl-30 pr-8 rounded w-1/3 text-base bg-blue;
+    background-image: url(../images/search.svg);
+    background-position:  5px 50%;
+    background-repeat: no-repeat;
+
+}
+
+#top hr {
+    @apply my-12;
+}

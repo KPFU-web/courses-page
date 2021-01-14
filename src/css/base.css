@@ -1,0 +1,35 @@
+/* Fonts */
+.base-font {
+    font-family: "PT Sans";
+    color: #2f2f2f;
+}
+
+
+/* Colors */
+.primary {
+    color:#00599A;
+}
+.secondary {
+    color: #a1a1a1;
+}
+
+/* Backgrounds */
+
+.main-blue {
+    background-color:#00599A;
+}
+.transparent-blue {
+    background-color: rgba(0, 89, 154, 0.09);
+}
+
+.light-gray {
+    background-color: #f0f0f0;
+}
+
+/* Text */
+.base-dark {
+    color: #2f2f2f;
+}
+.base-white {
+    color: #fff;
+}
