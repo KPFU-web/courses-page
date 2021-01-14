@@ -5,3 +5,19 @@
 .brand {
     @apply flex-shrink-0;
 }
+
+.profile {
+    @apply flex justify-between items-center text-white;
+}
+
+.profile img {
+    @apply w-48 h-48 mr-20 rounded-full;
+}
+
+.profile .fio {
+    @apply font-bold;
+}
+
+.profile .status {
+    @apply text-sm;
+}

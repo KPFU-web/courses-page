@@ -22,5 +22,5 @@ main {
     @apply flex flex-wrap;
 }
 .course-grid .course {
-    @apply w-1/2 p-12;
+    @apply w-1/2 pr-24 pb-24;
 }

@@ -1,16 +1,47 @@
+/* Breadcrumbs */
 
 #top .breadcrumbs {
-    @apply text-sm mb-20 mt-20;
+    @apply mt-20 mb-20 text-sm;
 }
 
+#top .breadcrumbs a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+#top .breadcrumbs a.current {
+    color: #a1a1a1;
+}
+
+/* Search input */
 
 #top .header-search {
-    @apply my-24 py-12 pl-30 pr-8 rounded w-1/3 text-base bg-blue;
+    @apply w-1/4 py-12 pl-48 pr-8 my-24 text-base rounded-lg bg-blue;
     background-image: url(../images/search.svg);
-    background-position:  5px 50%;
+    background-position: 20px 50%;
     background-repeat: no-repeat;
-
 }
+
+#top .header-search:focus {
+    @apply outline-none shadow-outline;
+}
+
+#top ::-webkit-input-placeholder { /* Chrome */
+    color: #2f2f2f;
+  }
+#top :-ms-input-placeholder { /* IE 10+ */
+    color: #2f2f2f;
+  }
+#top ::-moz-placeholder { /* Firefox 19+ */
+    color: #2f2f2f;
+    opacity: 1;
+}
+#top :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #2f2f2f;
+    opacity: 1;
+}
+
+/* Divider */
 
 #top hr {
     @apply my-12;

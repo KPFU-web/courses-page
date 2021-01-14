@@ -21233,8 +21233,11 @@ main {
 
 .course-grid .course {
   width: 50%;
-  padding: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
 }
+
+/* Components */
 
 /* TOP */
 
@@ -21244,6 +21247,65 @@ main {
 }
 
 /* Main */
+
+.ghost {
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #00599A;
+  border-color: rgba(0, 89, 154, var(--border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --text-opacity: 1;
+  color: #00599A;
+  color: rgba(0, 89, 154, var(--text-opacity));
+}
+
+.ghost:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.ghost > img {
+  margin-right: 5px;
+}
+
+.primary {
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  --bg-opacity: 1;
+  background-color: #00599A;
+  background-color: rgba(0, 89, 154, var(--bg-opacity));
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #00599A;
+  border-color: rgba(0, 89, 154, var(--border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 
 .header {
   padding-top: 1.5rem;
@@ -21257,27 +21319,90 @@ main {
   flex-shrink: 0;
 }
 
-#top .breadcrumbs {
-  font-size: 0.875rem;
-  margin-bottom: 1.25rem;
-  margin-top: 1.25rem;
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.profile img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.25rem;
+  border-radius: 9999px;
+}
+
+.profile .fio {
+  font-weight: 700;
+}
+
+.profile .status {
+  font-size: 0.875rem;
+}
+
+/* Breadcrumbs */
+
+#top .breadcrumbs {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+#top .breadcrumbs a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+#top .breadcrumbs a.current {
+  color: #a1a1a1;
+}
+
+/* Search input */
+
 #top .header-search {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  width: 25%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 30px;
+  padding-left: 3rem;
   padding-right: 0.5rem;
-  border-radius: 0.25rem;
-  width: 33.333333%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
+  border-radius: 0.5rem;
   background-color: rgba(0, 89, 154, 0.09);
   background-image: url(../images/search.svg);
-  background-position:  5px 50%;
+  background-position: 20px 50%;
   background-repeat: no-repeat;
 }
+
+#top .header-search:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+#top ::-webkit-input-placeholder { /* Chrome */
+  color: #2f2f2f;
+}
+
+#top :-ms-input-placeholder { /* IE 10+ */
+  color: #2f2f2f;
+}
+
+#top ::-moz-placeholder { /* Firefox 19+ */
+  color: #2f2f2f;
+  opacity: 1;
+}
+
+#top :-moz-placeholder { /* Firefox 4 - 18 */
+  color: #2f2f2f;
+  opacity: 1;
+}
+
+/* Divider */
 
 #top hr {
   margin-top: 0.75rem;
@@ -21298,6 +21423,11 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.sidebar hr {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
 .sidebar select {
   height: 3rem;
   padding-left: 0.75rem;
@@ -21305,6 +21435,28 @@ main {
   border-radius: 0.5rem;
   background-color: rgba(0, 89, 154, 0.09);
   width: 100%;
+}
+
+.sidebar .ghost {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar .row {
+  margin-bottom: 1rem;
+}
+
+.sidebar .row label {
+  display: block;
+  padding-left: 1.5rem;
+}
+
+.sidebar .row input[type='checkbox'] {
+  margin-left: -1.25rem;
+}
+
+.sidebar button[type='submit']{
+  margin-top: 2rem;
 }
 
 .card {
@@ -21355,6 +21507,9 @@ main {
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.card .title a {
 }
 
 .card .bottom {

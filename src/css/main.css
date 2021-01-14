@@ -1,12 +1,13 @@
 @import "tailwindcss/base";
-@import "./fonts";
+@import "./fonts"; 
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @import "./layout";
 
-
+/* Components */
 @import "components/elements";
+@import "components/buttons";
 @import "components/header";
 @import "components/top";
 @import "components/sidebar";

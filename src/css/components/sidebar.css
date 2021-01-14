@@ -6,6 +6,25 @@
 .sidebar > h4 {
     @apply text-xl font-bold mt-32 mb-24;
 }
+.sidebar hr {
+    @apply mt-64 mb-40;
+}
 .sidebar select {
     @apply h-48 pl-12 pr-4 rounded-lg bg-blue w-full;
+}
+.sidebar .ghost {
+    @apply my-16;
+}
+
+.sidebar .row {
+    @apply mb-16;
+}
+.sidebar .row label {
+    @apply block pl-24;
+}
+.sidebar .row input[type='checkbox'] {
+    @apply -ml-20;
+}
+.sidebar button[type='submit']{
+    @apply mt-32;   
 }

@@ -1,0 +1,21 @@
+
+
+.ghost {
+    @apply w-full px-12 py-10 border-2 border-primary outline-none rounded-lg flex justify-center items-center text-primary;
+}
+
+.ghost:focus {
+    @apply outline-none;
+}
+
+.ghost > img {
+    margin-right: 5px;
+}
+
+.primary {
+    @apply w-full px-12 py-10 bg-primary border-2 border-primary outline-none text-white rounded-lg flex justify-center items-center;
+}
+
+.primary:focus {
+    @apply outline-none;
+}
